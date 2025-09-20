@@ -8,9 +8,6 @@ System Design is the process of **planning and defining the architecture of a so
 3. Stays reliable even if parts fail  
 4. Is maintainable and extendable over time  
 
----
-
-### **Beginner-Friendly Explanation**
 Think of system design as **blueprinting a city** before building it:
 
 - Where will the roads go? (Data flow)  
