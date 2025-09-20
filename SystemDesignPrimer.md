@@ -175,7 +175,8 @@ System Design is the **art and science of building big software systems** so the
 
 # ⚙️Horizontal vs. Vertical Scaling
 
-## 1. Software Engineering 101: From Code to Service
+![Horizontal vs Vertical Scaling](https://substackcdn.com/image/fetch/$s_!wah8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3839565b-5dc4-46c3-a920-b63d7e1501e1_2260x792.png)
+
 - You write some code (an algorithm) on your computer. It takes inputs and produces outputs.  
 - If the code is useful, others will want to use it. But you can’t just hand them your laptop!  
 
@@ -189,7 +190,7 @@ Expose your code via the internet using an **API (Application Programming Interf
 
 ---
 
-## 2. Deploying the Service: Self-hosting vs. Cloud
+## 1. Deploying the Service: Self-hosting vs. Cloud
 - **Self-hosting:** Running the service on your personal computer or private server.  
   - Risks: Power loss, hardware crash, accidental shutdown → service goes offline.  
   - Also limited by your personal machine’s capacity.  
@@ -203,13 +204,13 @@ Expose your code via the internet using an **API (Application Programming Interf
 
 ---
 
-## 3. Scaling Needs Arise
+## 2. Scaling Needs Arise
 As your service becomes popular, **one computer/server can’t keep up** with incoming traffic.  
 This is the critical moment where **scalability** becomes important.
 
 ---
 
-## 4. Scalability: Two Approaches
+## 3. Scalability: Two Approaches
 ### a. Vertical Scaling (Scaling Up)
 - Upgrade the existing server → more CPU, RAM, faster SSDs.  
 - Analogy: Upgrade from a basic laptop to a high-end workstation.  
@@ -222,7 +223,7 @@ This is the critical moment where **scalability** becomes important.
 
 ---
 
-## 5. How Do These Approaches Work? (In-depth)
+## 4. How Do These Approaches Work? (In-depth)
 
 ### Vertical Scaling
 **Pros**
@@ -259,7 +260,7 @@ Large-scale web applications (Facebook, Netflix, Amazon) run on horizontally sca
 
 ---
 
-## 6. Detailed Comparison Table
+## 5. Detailed Comparison Table
 
 | **Aspect**        | **Vertical Scaling**                        | **Horizontal Scaling**                            |
 |--------------------|---------------------------------------------|--------------------------------------------------|
@@ -273,7 +274,7 @@ Large-scale web applications (Facebook, Netflix, Amazon) run on horizontally sca
 
 ---
 
-## 7. Real-World Approach: Hybrid Scaling
+## 6. Real-World Approach: Hybrid Scaling
 In practice, most companies **combine both approaches**:
 
 1. **Start vertical**: Scale up one server until hardware/cost hits limits.  
@@ -288,7 +289,7 @@ In practice, most companies **combine both approaches**:
 
 ---
 
-## 8. Trade-offs in System Design
+## 7. Trade-offs in System Design
 Every choice comes with trade-offs:
 
 - **Consistency vs. Availability:**  
@@ -307,9 +308,6 @@ Every choice comes with trade-offs:
 Distributed systems cannot simultaneously guarantee **Consistency, Availability, and Partition Tolerance** — you must compromise.
 
 ---
-
-## 9. Conclusion
-System design = understanding and applying both **vertical and horizontal scaling**.  
 
 When evaluating a system, ask:  
 - Is it **scalable**?  
