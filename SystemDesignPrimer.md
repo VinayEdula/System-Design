@@ -56,20 +56,13 @@ System Design is the **art and science of building big software systems** so the
 
 ## System Design: Beginner's Guide from the Pizza Shop Analogy
 
-### 1. What is System Design?
-- System design is about planning how to build large-scale software (like apps and websites millions use).
-- **Goal:** Make sure everything works fast, handles lots of users, and keeps running if something fails.
-- Example: Social media, e-commerce sites, or bank apps—all need good system design.
-
----
-
-### 2. Pizza Shop Analogy
+### 1. Pizza Shop Analogy
 - Imagine opening a pizza restaurant with **one chef**.
 - The chef represents your **computer/server**—the main worker handling customer orders (requests).
 
 ---
 
-### 3. Vertical Scaling ("Scaling Up")
+### 2. Vertical Scaling ("Scaling Up")
 - If more customers come, you first ask the chef to work faster (pay more, organize better).
     - **In tech:** Upgrade the computer's RAM, CPU, or storage.
 - **Preprocessing (cron jobs):** Prepare parts of the pizza (like dough) early in the morning (when there are no orders).
@@ -78,7 +71,7 @@ System Design is the **art and science of building big software systems** so the
 
 ---
 
-### 4. Handling Failures (Backup Servers)
+### 3. Handling Failures (Backup Servers)
 - If the only chef is sick, nobody gets pizza!
     - **Technical term:** This is a "single point of failure."
 - Solution: Have a backup chef ready to step in.
@@ -86,7 +79,7 @@ System Design is the **art and science of building big software systems** so the
 
 ---
 
-### 5. Horizontal Scaling ("Scaling Out")
+### 4. Horizontal Scaling ("Scaling Out")
 - As business grows, hire more chefs instead of relying on one.
     - Now, **several chefs (servers)** work in parallel, each handling part of the load.
     - This lets you handle many more orders at the same time.
@@ -94,7 +87,7 @@ System Design is the **art and science of building big software systems** so the
 
 ---
 
-### 6. Microservices (Specialization and Routing)
+### 5. Microservices (Specialization and Routing)
 - Some chefs become specialists:
     - Chef 1 & 3 make pizzas, Chef 2 makes garlic bread.
     - When an order comes in, send it to the best chef for the job (not randomly).
@@ -106,7 +99,7 @@ System Design is the **art and science of building big software systems** so the
 
 ---
 
-### 7. Distributed Systems (Multiple Shops, Multiple Locations)
+### 6. Distributed Systems (Multiple Shops, Multiple Locations)
 - What if your shop loses power? Business stops.
 - Solution: Open **another shop in a different part of town**.
     - The business keeps running even if one shop fails.
@@ -115,7 +108,7 @@ System Design is the **art and science of building big software systems** so the
 
 ---
 
-### 8. Load Balancers (Smart Request Routing)
+### 7. Load Balancers (Smart Request Routing)
 - If customers had to pick which shop to order from, it's confusing.
 - Instead, have a ***load balancer***—like a manager—who:
     - Knows how busy each shop is.
@@ -124,7 +117,7 @@ System Design is the **art and science of building big software systems** so the
 
 ---
 
-### 9. Decoupling (Clear Separation Between Parts)
+### 8. Decoupling (Clear Separation Between Parts)
 - Pizza chefs and delivery drivers don’t need to know all about each other.
     - Chefs focus on making pizza, drivers focus on delivering.
 - **Decoupling:** Build your system so different parts are independent.
@@ -133,7 +126,7 @@ System Design is the **art and science of building big software systems** so the
 
 ---
 
-### 10. Logging and Metrics (Measuring and Improving)
+### 9. Logging and Metrics (Measuring and Improving)
 - Keep track of everything—orders, delays, problems.
 - Use this data ("metrics") to spot problems and make improvements.
     - E.g., slow oven or delivery bike? Replace or repair it.
@@ -141,14 +134,14 @@ System Design is the **art and science of building big software systems** so the
 
 ---
 
-### 11. Extensibility (Easily Add New Features)
+### 10. Extensibility (Easily Add New Features)
 - Don’t hardcode only pizza—maybe you’ll add burgers or drinks later.
 - Build your system to easily support new menu items or business changes.
 - **In tech:** Use flexible designs so new features can be added with little effort.
 
 ---
 
-### 12. High Level Design (HLD) vs. Low Level Design (LLD)
+### 11. High Level Design (HLD) vs. Low Level Design (LLD)
 - **HLD:** The overall structure and how big parts connect (like the map of all shops, chefs, delivery flow).
 - **LLD:** Detailed plans (like the pizza recipe, instructions for delivery, actual code and classes for programmers).
 - Both are important—the “big map” and the “detailed instructions.”
