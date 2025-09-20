@@ -175,8 +175,6 @@ System Design is the **art and science of building big software systems** so the
 
 # ⚙️Horizontal vs. Vertical Scaling
 
-![Horizontal vs Vertical Scaling](https://substackcdn.com/image/fetch/$s_!wah8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3839565b-5dc4-46c3-a920-b63d7e1501e1_2260x792.png)
-
 - You write some code (an algorithm) on your computer. It takes inputs and produces outputs.  
 - If the code is useful, others will want to use it. But you can’t just hand them your laptop!  
 
@@ -211,6 +209,9 @@ This is the critical moment where **scalability** becomes important.
 ---
 
 ## 3. Scalability: Two Approaches
+
+![Horizontal vs Vertical Scaling](https://substackcdn.com/image/fetch/$s_!wah8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3839565b-5dc4-46c3-a920-b63d7e1501e1_2260x792.png)
+
 ### a. Vertical Scaling (Scaling Up)
 - Upgrade the existing server → more CPU, RAM, faster SSDs.  
 - Analogy: Upgrade from a basic laptop to a high-end workstation.  
